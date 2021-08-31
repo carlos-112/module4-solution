@@ -1,0 +1,10 @@
+{{ menuItemsCtrl.menuItems.category.name }}
+<br>
+<div ng-if="menuItemsCtrl.menuItems.category.special_instructions"> {{ menuItemsCtrl.menuItems.category.special_instructions }}
+<br></div>
+<br>
+
+<menu-item ng-repeat="menuItem in menuItemsCtrl.menuItems.menu_items" menu-item="menuItem"></menu-item>
+
+<br>
+<button type="button" id="CategoriesButton" ui-sref="categoriesList">Back to Categories</button>
